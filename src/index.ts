@@ -28,6 +28,8 @@ if (isNaN(foodNumber)) {
   console.log('Invalid food number!')
 } else if (foodNumber > maxFood) {
   console.log('The maximum quantity of food is 3.')
+} else if (foodNumber <= 0) {
+  console.log('Please enter a positive number!')
 } else {
   if (food === 'sub') {
     foodTimeMinute = foodNumber * timeSubMinute
