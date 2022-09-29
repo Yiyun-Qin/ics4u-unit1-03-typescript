@@ -43,6 +43,8 @@ if (isNaN(foodNumber)) {
   }
 }
 if (foodTimeMinute >= 0 && foodTimeSec >= 0) {
-  console.log(`The total cook time is ${foodTimeMinute} minutes and ${foodTimeSec} seconds.`)
+  console.log(
+    `The total cook time is ${foodTimeMinute} minutes and ${foodTimeSec} seconds.`
+  )
 }
 console.log('\nDone.')
