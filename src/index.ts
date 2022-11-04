@@ -1,5 +1,5 @@
 /**
- * This is a program that calculates the time needs to cook food
+ * This is a program that calculates the time needs to cook food.
  *
  * By:      Yiyun Qin
  * Version: 2.0
