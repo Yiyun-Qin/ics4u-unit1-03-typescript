@@ -45,8 +45,15 @@ if (isNaN(foodNumber)) {
   }
 }
 if (foodTimeMinute >= 0 && foodTimeSec >= 0) {
+  if (foodTimeSec >= 60) {
+    let multipleDouble = foodTimeSec / 60
+    let multiple = Math.floor(multipleDouble)
+    foodTimeMinute = foodTimeMinute + multiple
+    foodTimeSec = foodTimeSec - multiple * 60
+  }
   console.log(
     `The total cook time is ${foodTimeMinute} minutes and ${foodTimeSec} seconds.`
   )
 }
+
 console.log('\nDone.')
