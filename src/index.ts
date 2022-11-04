@@ -1,9 +1,8 @@
 /**
- * The HelloWorld program implements an application that
- * simply displays energy released question to the standard output.
+ * This is a program that calculates the time needs to cook food
  *
  * By:      Yiyun Qin
- * Version: 1.0
+ * Version: 2.0
  * Since:   2022-09-23
  */
 
@@ -46,8 +45,8 @@ if (isNaN(foodNumber)) {
 }
 if (foodTimeMinute >= 0 && foodTimeSec >= 0) {
   if (foodTimeSec >= 60) {
-    let multipleDouble = foodTimeSec / 60
-    let multiple = Math.floor(multipleDouble)
+    const multipleDouble = foodTimeSec / 60
+    const multiple = Math.floor(multipleDouble)
     foodTimeMinute = foodTimeMinute + multiple
     foodTimeSec = foodTimeSec - multiple * 60
   }
